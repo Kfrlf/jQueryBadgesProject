@@ -16,7 +16,7 @@ $(function() {
 
 		courses.forEach(function(course) {
 
-			console.log(course);
+			
 
 			var $course = $('<div />', {
 				'class': 'course'
@@ -27,7 +27,7 @@ $(function() {
 			}).appendTo($course);
 
 			$('<img />', {
-				src: source.badge
+				src: course.badge
 			}).appendTo($course);
 
 
