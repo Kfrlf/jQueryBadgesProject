@@ -16,20 +16,22 @@ $(function() {
 
 		courses.forEach(function(course) {
 
-			var $course = $('<div></div>', {
+			console.log(course);
+
+			var $course = $('<div />', {
 				'class': 'course'
 			}).appendTo($badges);
 
-			$('<h3></h3>', {
+			$('<h3 />', {
 				text: course.title
 			}).appendTo($course);
 
-			$('<img></img>', {
+			$('<img />', {
 				src: source.badge
 			}).appendTo($course);
 
 
-			$('<a></a>', {
+			$('<a />', {
 				'class': 'btn btn-primary',
 				target: '_blank',
 				href: course.url,
